@@ -1,5 +1,24 @@
 This repository has been set up to demonstrate my capabilities as a Developer.
 
+Major Technologies Utilised:
+<ul>
+    <li>
+        Gatsby (Site Generation)
+    </li>
+    <li>
+        React 16.9.x
+    </li>
+    <li>
+        TypeScript 3.6.3
+    </li>
+    <li>
+        SCSS with SCSS Modules
+    </li>
+    <li>
+        ESLint (JavaScript, TypeScript, React Hooks)
+    </li>
+</ul>
+
 Key Points:
 <ul>
     <li>
