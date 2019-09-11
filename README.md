@@ -1,6 +1,6 @@
 This repository has been set up to demonstrate my capabilities as a Developer.
 
-Major Technologies Utilised:
+<b>Major Technologies Utilised:</b>
 <ul>
     <li>
         Gatsby (Site Generation)
@@ -19,7 +19,7 @@ Major Technologies Utilised:
     </li>
 </ul>
 
-Key Points:
+<b>Key Points:</b>
 <ul>
     <li>
         I have used Gatsby here as the Site Generator over CRA as it provides out of the box GraphQL, SSR, and excellent plugin support. This is fantastic for getting up and running fast without thinking too much about environment maintenance.
@@ -32,7 +32,7 @@ Key Points:
     </li>
 </ul>
 
-Development Points:
+<b>Development Points:</b>
 <ul>
     <li>
         import React from "React"; does not work when using TypeScript as React is using CommonJS module system and has no recognisable default export for the ESNext module system. The solution here is to use import * as React from "React" or specifically identify what you need/want to avoid bloating your final bundle sizes.
