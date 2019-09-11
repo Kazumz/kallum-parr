@@ -5,7 +5,7 @@ import {
 } from "gatsby"
 
 import Header from "./header"
-import LayoutStyles from '../styles/layout.module.scss'
+import Styles from '../styles/layout.module.scss'
 
 interface ILayoutProps {
 }
@@ -26,18 +26,14 @@ const Layout: React.FC<React.PropsWithChildren<ILayoutProps>> = (props) => {
   `)
 
   return (
-    <div className={LayoutStyles.layout}>
+    <div className={Styles.layout}>
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <React.Fragment>
-        <main>{children}</main>
+      <main>{children}</main>
 
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </React.Fragment>
+      <footer>
+        {`Example Footer`}
+      </footer>
     </div>
   )
 }
