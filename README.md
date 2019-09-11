@@ -38,6 +38,6 @@ This repository has been set up to demonstrate my capabilities as a Developer.
         import React from "React"; does not work when using TypeScript as React is using CommonJS module system and has no recognisable default export for the ESNext module system. The solution here is to use import * as React from "React" or specifically identify what you need/want to avoid bloating your final bundle sizes.
     </li>
     <li>
-        Due to the use of CSS Modules in this solution, I have not implemented a full BEM pattern as it was not required. BEM sets out to solve conflicts in the global CSS file after compilation, but CSS modules solves this by applying a unique identifier to the class name during compilation. However, I quite like the BEM pattern, so I am still following it but only using the 'Block' naming convention as this is only what CSS Modules in code supports.
+        Due to the use of CSS Modules in this solution, I have not implemented a full BEM pattern as it was not required. BEM sets out to solve conflicts in the global CSS file after compilation, but CSS modules solves this by applying a unique identifier to the class name during compilation. However, I quite like the BEM pattern, so I am still following it but only using the 'Block' naming convention as this is only what CSS Modules in code supports. Please take a look at some of the module scss files in this solution to get a solid example.
     </li>
 </ul>
