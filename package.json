@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "kallum-parr",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A business website advertising my capabilities",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kallum Parr <kallum.parr@kallumparr.co.uk>",
   "dependencies": {
     "gatsby": "^2.15.14",
     "gatsby-image": "^2.2.18",
@@ -11,15 +11,18 @@
     "gatsby-plugin-offline": "^2.2.10",
     "gatsby-plugin-react-helmet": "^3.1.7",
     "gatsby-plugin-sharp": "^2.2.21",
+    "gatsby-plugin-typescript": "^2.1.7",
+    "gatsby-plugin-typescript-checker": "^1.1.1",
     "gatsby-source-filesystem": "^2.1.22",
     "gatsby-transformer-sharp": "^2.2.14",
-    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@types/react-helmet": "^5.0.9",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.3"
   },
   "keywords": [
     "gatsby"
