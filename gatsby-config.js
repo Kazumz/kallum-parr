@@ -34,6 +34,14 @@ module.exports = {
     `gatsby-plugin-typescript-checker`,
     `gatsby-plugin-sass`,
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Rubik']
+        }
+      }
+    },
+    {
       resolve: 'gatsby-plugin-eslint',
       options: {
         test: /\.js$|\.ts$|\.tsx$|\.jsx$/,
