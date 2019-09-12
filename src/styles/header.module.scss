@@ -11,8 +11,6 @@
     background: $HeaderBackgroundBrush;
     padding-left: $StandardLargeMargin;
     padding-right: $StandardLargeMargin;
-    user-select: none;
-    cursor: pointer;
 
     & > .header-title {
         overflow: hidden;
@@ -21,6 +19,8 @@
         font-weight: bold;
         color: $HeaderTitleBrush;
         font-size: 21px;
+        user-select: none;
+        cursor: pointer;
     }
 
     & > .header-quick-nav {

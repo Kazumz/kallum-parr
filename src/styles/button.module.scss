@@ -13,6 +13,11 @@
     user-select: none;
     cursor: pointer;
     touch-action: manipulation;
+    border: 1px solid transparent;
+
+    &:hover {
+        border: 1px solid $ButtonHover;
+    }
 
     & > .button-text {
         font-weight: bold;
