@@ -16,13 +16,6 @@
         overflow-y: auto;
         overflow-x: hidden;
         background: $LayoutContentBackgroundBrush;
-
-        & > .layout-main-container {
-            margin-top: $StandardMargin;
-            margin-bottom: $StandardMargin;
-            margin-left: $StandardLargeMargin;
-            margin-right: $StandardLargeMargin;
-        }
     }
 
     & > .layout-footer {

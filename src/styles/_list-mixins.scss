@@ -1,0 +1,9 @@
+@import 'variables';
+
+@mixin list(
+    $column-size: 10px,
+    $grid-gap: $StandardMargin
+) {
+    grid-template-columns: repeat(auto-fit, $column-size);
+    grid-gap: $grid-gap;
+}

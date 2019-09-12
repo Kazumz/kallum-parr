@@ -1,3 +1,13 @@
+@import 'list-mixins';
+
 .index {
-    // todo
+    & > .index-list {
+        $item-width: 200px;
+        $item-spacing: 50px;
+
+        @include list($item-width, $item-spacing);
+
+        justify-content: space-evenly;
+        padding: $StandardLargeMargin;
+    }
 }

@@ -30,9 +30,7 @@ const Layout: React.FC<React.PropsWithChildren<ILayoutProps>> = (props) => {
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <main className={Styles.layoutMain}>
-        <div className={Styles.layoutMainContainer}>
-          {children}
-        </div>
+        {children}
       </main>
 
       {/* <footer className={Styles.layoutFooter}>

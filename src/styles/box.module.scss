@@ -1,0 +1,25 @@
+@import 'brushes';
+@import 'variables';
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    & > .box-image {
+        border: 10px solid $BoxBorderColour;
+        box-shadow: 0 8px 15px 3px rgba(0, 0, 0, 0.17);
+        overflow: hidden;
+        border-radius: 100%;
+    }
+
+    & > .box-title {
+        font-weight: bold;
+        margin-top: $StandardMargin;
+    }
+
+    & > .box-description {
+        margin-top: $StandardMargin;
+        overflow: hidden;
+    }
+}

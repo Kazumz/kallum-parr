@@ -1,0 +1,7 @@
+@import 'variables';
+
+.list {
+    display: grid;
+    list-style: none;
+    grid-gap: $StandardLargeMargin;
+}
