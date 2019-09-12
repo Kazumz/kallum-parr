@@ -1,4 +1,29 @@
+@import 'reset';
+@import 'colours';
+@import 'variables';
+
 .layout {
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    & > .layout-main {
+        display: grid;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background: $Grey1;
+
+        & > .layout-main-container {
+            margin-top: $StandardMargin;
+            margin-bottom: $StandardMargin;
+            margin-left: $StandardMargin * 2;
+            margin-right: $StandardMargin * 2;
+        }
+    }
+
+    & > .layout-footer {
+        height: $FooterHeight;
+        border-top: 2px solid $White1;
+    }
 }

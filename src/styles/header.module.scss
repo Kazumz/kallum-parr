@@ -1,3 +1,13 @@
+@import 'variables';
+@import 'colours';
+
 .header {
-    // Todo
+    height: $HeaderHeight;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    background: $Blue1;
+    border-bottom: 2px solid $Blue2;
 }

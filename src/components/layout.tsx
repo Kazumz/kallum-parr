@@ -5,7 +5,7 @@ import {
 } from "gatsby"
 
 import Header from "./header"
-import Styles from '../styles/layout.module.scss'
+import Styles from "../styles/layout.module.scss"
 
 interface ILayoutProps {
 }
@@ -29,9 +29,13 @@ const Layout: React.FC<React.PropsWithChildren<ILayoutProps>> = (props) => {
     <div className={Styles.layout}>
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <main>{children}</main>
+      <main className={Styles.layoutMain}>
+        <div className={Styles.layoutMainContainer}>
+          {children}
+        </div>
+      </main>
 
-      <footer>
+      <footer className={Styles.layoutFooter}>
         {`Example Footer`}
       </footer>
     </div>
