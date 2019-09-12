@@ -26,11 +26,17 @@ const Header: React.FC<IHeaderProps> = (props) => {
       <nav className={Styles.headerQuickNav}>
         <Button
           className={Styles.headerQuickNavButton}
-          text={'CV'}
-          href={'about:blank'}
+          text={'Home'}
+          href={'/'}
         />
         <Button
           className={Styles.headerQuickNavButton}
+          text={'CV'}
+          href={'/cv/'}
+        />
+        <Button
+          className={Styles.headerQuickNavButton}
+          external={true}
           text={'GitHub'}
           href={'https://github.com/Kazumz/kallum-parr'}
         />

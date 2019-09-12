@@ -19,6 +19,10 @@
         border: 1px solid $ButtonHover;
     }
 
+    &.active {
+        background: $ButtonActiveLink;
+    }
+
     & > .button-text {
         font-weight: bold;
         color: white;
