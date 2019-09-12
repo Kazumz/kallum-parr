@@ -4,7 +4,7 @@
 - [Preview current build](https://www.kallumparr.co.uk/)
 - [![Netlify Status](https://api.netlify.com/api/v1/badges/3d106bc7-9708-4963-82bd-ae367b39871f/deploy-status)](https://app.netlify.com/sites/awesome-tereshkova-393838/deploys)
 
-## Major Technologies Utilised:
+## Major Technologies:
 <ul>
     <li>
         Gatsby (Site Generation)
