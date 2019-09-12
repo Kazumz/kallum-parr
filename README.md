@@ -1,8 +1,10 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3d106bc7-9708-4963-82bd-ae367b39871f/deploy-status)](https://app.netlify.com/sites/awesome-tereshkova-393838/deploys)
+## kallum-parr
+> This repository has been set up to demonstrate my capabilities as a Developer.
 
-This repository has been set up to demonstrate my capabilities as a Developer.
+- [Preview current build](https://www.kallumparr.co.uk/)
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/3d106bc7-9708-4963-82bd-ae367b39871f/deploy-status)](https://app.netlify.com/sites/awesome-tereshkova-393838/deploys)
 
-<b>Major Technologies Utilised:</b>
+# Major Technologies Utilised:
 <ul>
     <li>
         Gatsby (Site Generation)
@@ -21,7 +23,7 @@ This repository has been set up to demonstrate my capabilities as a Developer.
     </li>
 </ul>
 
-<b>Key Points:</b>
+# Key Points:
 <ul>
     <li>
         I have used Gatsby here as the Site Generator over CRA as it provides out of the box GraphQL, SSR, and excellent plugin support. This is fantastic for getting up and running fast without thinking too much about environment maintenance.
@@ -34,7 +36,7 @@ This repository has been set up to demonstrate my capabilities as a Developer.
     </li>
 </ul>
 
-<b>Development Points:</b>
+# Development Points:
 <ul>
     <li>
         import React from "React"; does not work when using TypeScript as React is using CommonJS module system and has no recognisable default export for the ESNext module system. The solution here is to use import * as React from "React" or specifically identify what you need/want to avoid bloating your final bundle sizes.
