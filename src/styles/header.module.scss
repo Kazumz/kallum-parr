@@ -1,13 +1,32 @@
 @import 'variables';
-@import 'colours';
+@import 'brushes';
 
 .header {
     height: $HeaderHeight;
 
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    border-bottom: 1px solid black;
+    background: $HeaderBackgroundBrush;
+    padding-left: $StandardLargeMargin;
+    padding-right: $StandardLargeMargin;
 
-    background: $Blue1;
-    border-bottom: 2px solid $Blue2;
+    & > .header-title {
+        overflow: hidden;
+        white-space: nowrap;
+        margin-right: $StandardLargeMargin;
+        font-weight: bold;
+        color: $HeaderTitleBrush;
+        font-size: 21px;
+    }
+
+    & > .header-quick-nav {
+        display: flex;
+        justify-content: center;
+
+        & > .header-quick-nav-button {
+            margin-right: $StandardMargin;
+        }
+    }
 }

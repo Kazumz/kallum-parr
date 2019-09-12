@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'brushes';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: $ButtonHeight;
+    min-width: $ButtonWidth;
+    border-radius: $StandardBorderRadius;
+    background: $ButtonBackground;
+    user-select: none;
+    cursor: pointer;
+    touch-action: manipulation;
+
+    & > .button-text {
+        font-weight: bold;
+        color: white;
+        margin-left: $StandardLargeMargin;
+        margin-right: $StandardLargeMargin;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

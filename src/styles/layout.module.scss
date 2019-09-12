@@ -1,5 +1,5 @@
 @import 'reset';
-@import 'colours';
+@import 'brushes';
 @import 'variables';
 
 .layout {
@@ -7,23 +7,26 @@
 
     display: grid;
     grid-template-rows: auto 1fr auto;
+    max-width: 1280px;
+    background: $LayoutBackgroundBrush;
+    margin: 0 auto;
 
     & > .layout-main {
         display: grid;
         overflow-y: auto;
         overflow-x: hidden;
-        background: $Grey1;
+        background: $LayoutContentBackgroundBrush;
 
         & > .layout-main-container {
             margin-top: $StandardMargin;
             margin-bottom: $StandardMargin;
-            margin-left: $StandardMargin * 2;
-            margin-right: $StandardMargin * 2;
+            margin-left: $StandardLargeMargin;
+            margin-right: $StandardLargeMargin;
         }
     }
 
     & > .layout-footer {
         height: $FooterHeight;
-        border-top: 2px solid $White1;
+        background: $LayoutContentBackgroundBrush;
     }
 }
