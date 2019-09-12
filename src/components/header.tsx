@@ -1,5 +1,6 @@
 import * as React from "react"
 import classnames from "classnames";
+import { Link } from "gatsby";
 
 import Styles from "../styles/header.module.scss"
 import Button from "./button";
@@ -18,8 +19,11 @@ const Header: React.FC<IHeaderProps> = (props) => {
   const rootClassName: string = classnames(Styles.header, className)
   return (
     <header className={rootClassName}>
-      <span className={Styles.headerTitle}>{siteTitle}</span>
-      <span className={Styles.headerQuickNav}>
+      <Link to={'/'} className={Styles.headerTitle}>
+        {siteTitle}
+      </Link>
+
+      <nav className={Styles.headerQuickNav}>
         <Button
           className={Styles.headerQuickNavButton}
           text={'CV'}
@@ -30,7 +34,8 @@ const Header: React.FC<IHeaderProps> = (props) => {
           text={'GitHub'}
           href={'https://github.com/Kazumz/kallum-parr'}
         />
-      </span>
+      </nav>
+
       <span />
     </header>
   );

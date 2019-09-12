@@ -11,6 +11,8 @@
     background: $HeaderBackgroundBrush;
     padding-left: $StandardLargeMargin;
     padding-right: $StandardLargeMargin;
+    user-select: none;
+    cursor: pointer;
 
     & > .header-title {
         overflow: hidden;
