@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3d106bc7-9708-4963-82bd-ae367b39871f/deploy-status)](https://app.netlify.com/sites/awesome-tereshkova-393838/deploys)
+
 This repository has been set up to demonstrate my capabilities as a Developer.
 
 <b>Major Technologies Utilised:</b>
