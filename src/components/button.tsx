@@ -26,6 +26,7 @@ const Button: React.FC<IButtonProps> = (props) => {
             <a
                 className={rootClassName}
                 href={href}
+                rel="noopener noreferrer"
             >
                 <span className={Styles.buttonText}>{text}</span>
             </a>
