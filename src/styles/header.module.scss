@@ -48,6 +48,10 @@
 
         & > .header-quick-nav {
             grid-column: 1;
-        }    
+        }  
+        
+        & > .source-code {
+            display: none;
+        }
     }
 }
