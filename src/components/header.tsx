@@ -30,12 +30,21 @@ const Header: React.FC<IHeaderProps> = (props) => {
           text={i18next.t('header.home')}
           href={'/'}
         />
+
         <Button
           className={Styles.headerQuickNavButton}
           external={true}
           text={i18next.t('header.cv')}
           href={'https://1drv.ms/b/s!Ap2IEdO_tzkpiZIzUlmFoswX8b8hrA?e=yLV1ep'}
         />
+
+        <Button
+          className={Styles.headerQuickNavButton}
+          external={true}
+          text={i18next.t('header.linkedin')}
+          href={'https://linkedin.com/in/kallum-parr-83394465'}
+        />
+
         <Button
           className={Styles.headerQuickNavButton}
           external={true}

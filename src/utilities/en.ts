@@ -9,6 +9,7 @@ export default {
     "header": {
         "home": "Home",
         "cv": "CV",
-        "github": "GitHub"
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
     }
 }
