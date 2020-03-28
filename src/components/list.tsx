@@ -17,9 +17,9 @@ const List: React.FC<IListProps> = (props) => {
     const rootClassName: string = classnames(Styles.list, className)
     return (
         <ul className={rootClassName}>
-            {items.map(item => {
+            {items.map((item: JSX.Element, index: number) => {
                 return (
-                    <li>
+                    <li key={index}>
                         {item}
                     </li>
                 )

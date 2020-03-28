@@ -32,10 +32,6 @@ const Layout: React.FC<React.PropsWithChildren<ILayoutProps>> = (props) => {
       <main className={Styles.layoutMain}>
         {children}
       </main>
-
-      {/* <footer className={Styles.layoutFooter}>
-        {`Example Footer`}
-      </footer> */}
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import * as React from "react"
+import i18next from 'i18next';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -6,37 +7,45 @@ import Styles from "../styles/index.module.scss"
 import List from "../components/list"
 import Container from "../components/container"
 import Image from "../components/image";
-import Text from "../components/text";
+import Section from "../components/section";
+import initialise from "../utilities/internationalisation";
 
-const IndexPage: React.FC = () => (
-  <Layout>
-    <SEO title="Home" />
+initialise();
 
-    <span className={Styles.index}>
-      <List
-        className={Styles.indexList}
-        items={[
-          <Container
-            content={<Image />}
-            title={'Reliable'}
-          />,
-          <Container
-            content={<Image />}
-            title={'Consistent'}
-          />,
-          <Container
-            content={<Image />}
-            title={'Motivated'}
-          />
-        ]}
-      />
+const IndexPage: React.FC = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
 
-      <Text
-        header="About Me"
-        content="Hello, my name is Kallum."
-      />
-    </span>
-  </Layout>
-)
+      <span className={Styles.index}>
+        <List
+          className={Styles.indexList}
+          items={[
+            <Container
+              content={<Image />}
+              title={'Reliable'}
+            />,
+            <Container
+              content={<Image />}
+              title={'Consistent'}
+            />,
+            <Container
+              content={<Image />}
+              title={'Motivated'}
+            />
+          ]}
+        />
 
-export default IndexPage
+        <Section
+          header={i18next.t('index.about-me.title')}
+          content={[
+            i18next.t('index.about-me.content-one'),
+            i18next.t('index.about-me.content-two')
+          ]}
+        />
+      </span>
+    </Layout>
+  )
+};
+
+export default IndexPage;
