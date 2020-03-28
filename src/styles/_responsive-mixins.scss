@@ -1,0 +1,13 @@
+@import 'variables';
+
+@mixin tablet-down {
+    @media only screen and (max-width: $TabletBreakpoint) { 
+        @content; 
+    } 
+}
+
+@mixin mobile-down {
+    @media only screen and (max-width: $MobileBreakpoint) { 
+        @content; 
+    } 
+}

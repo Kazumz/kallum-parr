@@ -1,13 +1,26 @@
 @import 'list-mixins';
+@import 'responsive-mixins';
 
 .index {
-    & > .index-list {
-        $item-width: 200px;
-        $item-spacing: 50px;
+    $item-width: 200px;
+    $item-spacing: 50px;
 
+    & > .index-list {
         @include list($item-width, $item-spacing);
 
         justify-content: space-evenly;
         padding: $StandardLargeMargin;
+    }
+
+    @include tablet-down {
+        & > .index-list {
+            @include list(calc(#{$item-width} / 2), calc(#{$item-spacing} / 2));
+        }
+    }
+
+    @include mobile-down {
+        & > .index-list {
+            display: none;
+        }
     }
 }
