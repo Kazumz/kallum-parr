@@ -40,7 +40,8 @@ const IndexPage: React.FC = () => {
           header={i18next.t('index.about-me.title')}
           content={[
             i18next.t('index.about-me.content-one'),
-            i18next.t('index.about-me.content-two')
+            i18next.t('index.about-me.content-two'),
+            i18next.t('index.about-me.content-three')
           ]}
         />
       </span>

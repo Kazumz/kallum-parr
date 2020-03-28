@@ -48,10 +48,17 @@ const Header: React.FC<IHeaderProps> = (props) => {
         <Button
           className={Styles.headerQuickNavButton}
           external={true}
-          text={i18next.t('header.github')}
-          href={'https://github.com/Kazumz/kallum-parr'}
+          text={i18next.t('header.email')}
+          href={'mailto:kallum_parr@hotmail.com'}
         />
       </nav>
+
+      <Button
+        className={Styles.sourceCode}
+        external={true}
+        text={i18next.t('header.github')}
+        href={'https://github.com/Kazumz/kallum-parr'}
+      />
     </header>
   );
 }

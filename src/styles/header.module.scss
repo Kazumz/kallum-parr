@@ -6,7 +6,7 @@
     height: $HeaderHeight;
 
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     border-bottom: 1px solid black;
     background: $HeaderBackgroundBrush;
@@ -37,9 +37,17 @@
         }
     }
 
-    @include mobile-down {
+    & > .source-code {
+        grid-column: 3;
+    }
+
+    @include tablet-down {
         & > .header-title {
             display: none;
         }
+
+        & > .header-quick-nav {
+            grid-column: 1;
+        }    
     }
 }
