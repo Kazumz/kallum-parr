@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/index.module.scss"
 import List from "../components/list"
-import Box from "../components/box"
+import Container from "../components/container"
 import Image from "../components/image";
 
 const IndexPage: React.FC = () => (
@@ -15,17 +15,17 @@ const IndexPage: React.FC = () => (
       <List
         className={Styles.indexList}
         items={[
-          <Box
-            className={Styles.box}
+          <Container
             content={<Image />}
-            title={'Consistency'}
-            description={''}
+            title={'Reliable'}
           />,
-          <Box
-            className={Styles.box}
+          <Container
             content={<Image />}
-            title={'Performance'}
-            description={''}
+            title={'Consistent'}
+          />,
+          <Container
+            content={<Image />}
+            title={'Motivated'}
           />
         ]}
       />
