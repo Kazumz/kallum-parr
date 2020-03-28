@@ -16,6 +16,8 @@
         overflow-y: auto;
         overflow-x: hidden;
         background: $LayoutContentBackgroundBrush;
+        padding-left: $StandardLargeMargin;
+        padding-right: $StandardLargeMargin;
     }
 
     & > .layout-footer {

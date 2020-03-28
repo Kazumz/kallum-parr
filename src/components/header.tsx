@@ -41,8 +41,6 @@ const Header: React.FC<IHeaderProps> = (props) => {
           href={'https://github.com/Kazumz/kallum-parr'}
         />
       </nav>
-
-      <span />
     </header>
   );
 }

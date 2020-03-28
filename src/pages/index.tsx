@@ -6,6 +6,7 @@ import Styles from "../styles/index.module.scss"
 import List from "../components/list"
 import Container from "../components/container"
 import Image from "../components/image";
+import Text from "../components/text";
 
 const IndexPage: React.FC = () => (
   <Layout>
@@ -28,6 +29,11 @@ const IndexPage: React.FC = () => (
             title={'Motivated'}
           />
         ]}
+      />
+
+      <Text
+        header="About Me"
+        content="Hello, my name is Kallum."
       />
     </span>
   </Layout>

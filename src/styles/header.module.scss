@@ -1,11 +1,12 @@
 @import 'variables';
 @import 'brushes';
+@import 'responsive-mixins';
 
 .header {
     height: $HeaderHeight;
 
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
     border-bottom: 1px solid black;
     background: $HeaderBackgroundBrush;
@@ -13,6 +14,8 @@
     padding-right: $StandardLargeMargin;
 
     & > .header-title {
+        grid-column: 1;
+
         overflow: hidden;
         white-space: nowrap;
         margin-right: $StandardLargeMargin;
@@ -24,11 +27,19 @@
     }
 
     & > .header-quick-nav {
+        grid-column: 2;
+
         display: flex;
         justify-content: center;
 
         & > .header-quick-nav-button {
             margin-right: $StandardMargin;
+        }
+    }
+
+    @include mobile-down {
+        & > .header-title {
+            display: none;
         }
     }
 }
