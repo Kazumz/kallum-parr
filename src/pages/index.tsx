@@ -23,15 +23,15 @@ const IndexPage: React.FC = () => {
           items={[
             <Container
               content={<Image />}
-              title={'Reliable'}
+              title={i18next.t('index.blobs.reliable')}
             />,
             <Container
               content={<Image />}
-              title={'Consistent'}
+              title={i18next.t('index.blobs.consistent')}
             />,
             <Container
               content={<Image />}
-              title={'Motivated'}
+              title={i18next.t('index.blobs.motivated')}
             />
           ]}
         />

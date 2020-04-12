@@ -1,5 +1,10 @@
 export default {
     "index": {
+        "blobs": {
+            "reliable": "Reliable",
+            "consistent": "Consistent",
+            "motivated": "Motivated"
+        },
         "about-me": {
             "title": "About Me",
             "content-one": "Hello, my name is Kallum.",
