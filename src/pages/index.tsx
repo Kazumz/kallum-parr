@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Styles from "../styles/index.module.scss"
 import List from "../components/list"
 import Container from "../components/container"
-import Image from "../components/image";
+import Image from "../components/gatsby-astronaut";
 import Section from "../components/section";
 import initialise from "../utilities/internationalisation";
 
