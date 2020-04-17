@@ -3,12 +3,14 @@ import * as React from "react";
 interface ISectionProps {
     header?: string;
     content?: ReadonlyArray<string>;
+    className?: string;
 }
 
 const Section: React.FC<ISectionProps> = (props) => {
     const {
         header,
-        content
+        content,
+        className
     } = props;
 
     const paragraphs: ReadonlyArray<JSX.Element> = React.useMemo(
@@ -17,7 +19,7 @@ const Section: React.FC<ISectionProps> = (props) => {
     );
 
     return (
-        <span>
+        <span className={className}>
             <h1>{header}</h1>
             {paragraphs}
         </span>

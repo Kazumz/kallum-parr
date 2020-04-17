@@ -35,5 +35,9 @@ export default {
         "github": "GitHub",
         "linkedin": "LinkedIn",
         "email": "Email"
+    },
+    "404": {
+        "not-found": "404: It seems this page doesn't exist!",
+        "navigate-home": "Please navigate to home using the 'Home' button above."
     }
 }

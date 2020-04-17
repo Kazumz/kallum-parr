@@ -1,13 +1,25 @@
 import * as React from "react"
+import i18next from 'i18next';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Styles from "../styles/404.module.scss"
+import Section from "../components/section";
+import initialise from "../utilities/internationalisation";
+
+initialise();
 
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+
+    <Section
+      className={Styles.title}
+      header={i18next.t('404.not-found')}
+      content={[
+        i18next.t('404.navigate-home')
+      ]}
+    />
   </Layout>
 )
 
