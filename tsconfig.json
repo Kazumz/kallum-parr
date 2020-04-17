@@ -9,7 +9,9 @@
         "lib": [
             "dom",
             "es2015",
-            "es2017"
+            "es2017",
+            "es2018",
+            "esnext.asynciterable"
         ]
     },
     "include": [
