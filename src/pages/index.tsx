@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/index.module.scss"
 import List from "../components/list"
-import Container from "../components/container"
-import Image from "../components/gatsby-astronaut";
+import ImageContainer from "../components/image-container"
+import OrangeBlob from "../components/orange-blob";
 import Section from "../components/section";
 import initialise from "../utilities/internationalisation";
 
@@ -21,16 +21,16 @@ const IndexPage: React.FC = () => {
         <List
           className={Styles.indexList}
           items={[
-            <Container
-              content={<Image />}
+            <ImageContainer
+              content={<OrangeBlob />}
               title={i18next.t('index.blobs.reliable')}
             />,
-            <Container
-              content={<Image />}
+            <ImageContainer
+              content={<OrangeBlob />}
               title={i18next.t('index.blobs.consistent')}
             />,
-            <Container
-              content={<Image />}
+            <ImageContainer
+              content={<OrangeBlob />}
               title={i18next.t('index.blobs.motivated')}
             />
           ]}
