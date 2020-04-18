@@ -51,7 +51,7 @@
         grid-column: 3;
     }
 
-    @include mobile-down {
+    @include tablet-down {     
         & > .header-title {
             display: none;
         }
@@ -59,9 +59,7 @@
         & > .header-quick-nav {
             grid-column: 1;
         }  
-    }
 
-    @include tablet-down {        
         & > .source-code {
             display: none;
         }
