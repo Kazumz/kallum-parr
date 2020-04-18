@@ -18,6 +18,15 @@ const IndexPage: React.FC = () => {
       <SEO title="Home" />
 
       <span className={Styles.index}>
+        <Section
+          title={i18next.t('index.about-me.title')}
+          content={[
+            i18next.t('index.about-me.content-one'),
+            i18next.t('index.about-me.content-two'),
+            i18next.t('index.about-me.content-three')
+          ]}
+        />
+
         <List
           className={Styles.indexList}
           items={[
@@ -33,15 +42,6 @@ const IndexPage: React.FC = () => {
               content={<OrangeBlob />}
               title={i18next.t('index.blobs.motivated')}
             />
-          ]}
-        />
-
-        <Section
-          title={i18next.t('index.about-me.title')}
-          content={[
-            i18next.t('index.about-me.content-one'),
-            i18next.t('index.about-me.content-two'),
-            i18next.t('index.about-me.content-three')
           ]}
         />
 
