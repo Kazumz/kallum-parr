@@ -39,7 +39,7 @@ const Header: React.FC<IHeaderProps> = (props) => {
         <Button
           className={Styles.headerQuickNavButton}
           text={i18next.t('header.my-history')}
-          href={'/my-history'}
+          href={'/my-history/'}
         />
 
         <Button
