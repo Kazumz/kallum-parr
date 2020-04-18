@@ -12,10 +12,6 @@
         padding: $StandardLargeMargin;
     }
 
-    & > .index-introduction {
-        text-align: center;
-    }
-
     @include tablet-down {
         & > .index-list {
             @include list(calc(#{$item-width} / 2), calc(#{$item-spacing} / 2));

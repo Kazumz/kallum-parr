@@ -37,7 +37,7 @@ const IndexPage: React.FC = () => {
         />
 
         <Section
-          header={i18next.t('index.about-me.title')}
+          title={i18next.t('index.about-me.title')}
           content={[
             i18next.t('index.about-me.content-one'),
             i18next.t('index.about-me.content-two'),
@@ -46,23 +46,7 @@ const IndexPage: React.FC = () => {
         />
 
         <Section
-          header={i18next.t('index.my-history.title')}
-          content={[
-            i18next.t('index.my-history.content-one'),
-            i18next.t('index.my-history.content-two'),
-            i18next.t('index.my-history.content-three'),
-            i18next.t('index.my-history.content-four'),
-            i18next.t('index.my-history.content-five'),
-            i18next.t('index.my-history.content-six'),
-            i18next.t('index.my-history.content-seven'),
-            i18next.t('index.my-history.content-eight'),
-            i18next.t('index.my-history.content-nine'),
-            i18next.t('index.my-history.content-ten')
-          ]}
-        />
-
-        <Section
-          header={i18next.t('index.professional-development.title')}
+          title={i18next.t('index.professional-development.title')}
           content={[
             i18next.t('index.professional-development.capita'),
           ]}

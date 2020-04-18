@@ -15,7 +15,7 @@ const NotFoundPage = () => (
 
     <Section
       className={Styles.title}
-      header={i18next.t('404.not-found')}
+      title={i18next.t('404.not-found')}
       content={[
         i18next.t('404.navigate-home')
       ]}

@@ -1,14 +1,18 @@
 import * as React from "react";
 
+import isNullUndefinedOrEmpty from "../utilities/string-utilities";
+
 interface ISectionProps {
-    header?: string;
+    title?: string;
+    subTitle?: string;
     content?: ReadonlyArray<string>;
     className?: string;
 }
 
 const Section: React.FC<ISectionProps> = (props) => {
     const {
-        header,
+        title,
+        subTitle,
         content,
         className
     } = props;
@@ -20,7 +24,8 @@ const Section: React.FC<ISectionProps> = (props) => {
 
     return (
         <span className={className}>
-            <h1>{header}</h1>
+            {!isNullUndefinedOrEmpty(title) && <h1>{title}</h1>}
+            {!isNullUndefinedOrEmpty(subTitle) && <h2>{subTitle}</h2>}
             {paragraphs}
         </span>
     );
