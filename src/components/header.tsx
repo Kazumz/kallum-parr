@@ -5,6 +5,7 @@ import i18next from 'i18next';
 
 import Styles from "../styles/header.module.scss"
 import Button from "./button";
+import KallumParr from "../images/kallum-parr";
 
 interface IHeaderProps {
   className?: string;
@@ -21,6 +22,10 @@ const Header: React.FC<IHeaderProps> = (props) => {
   return (
     <header className={rootClassName}>
       <Link to={'/'} className={Styles.headerTitle}>
+        <span className={Styles.headerTitleIcon}>
+          <KallumParr />
+        </span>
+
         {siteTitle}
       </Link>
 

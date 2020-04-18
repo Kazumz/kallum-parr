@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Styles from "../styles/index.module.scss"
 import List from "../components/list"
 import ImageContainer from "../components/image-container"
-import OrangeBlob from "../components/orange-blob";
+import OrangeBlob from "../images/orange-blob";
 import Section from "../components/section";
 import initialise from "../utilities/internationalisation";
 

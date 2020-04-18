@@ -16,6 +16,8 @@
     & > .header-title {
         grid-column: 1;
 
+        display: flex;
+        align-items: center;
         overflow: hidden;
         white-space: nowrap;
         margin-right: $StandardLargeMargin;
@@ -24,6 +26,14 @@
         font-size: 21px;
         user-select: none;
         cursor: pointer;
+
+        & > .header-title-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: $StandardLargeMargin;
+        }
     }
 
     & > .header-quick-nav {
@@ -41,7 +51,7 @@
         grid-column: 3;
     }
 
-    @include tablet-down {
+    @include mobile-down {
         & > .header-title {
             display: none;
         }
@@ -49,7 +59,9 @@
         & > .header-quick-nav {
             grid-column: 1;
         }  
-        
+    }
+
+    @include tablet-down {        
         & > .source-code {
             display: none;
         }

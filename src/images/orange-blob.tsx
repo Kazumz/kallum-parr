@@ -10,7 +10,7 @@ const OrangeBlob: React.FC = () => {
     query {
       placeholderImage: file(relativePath: { eq: "orange-blob.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 150) {
             ...GatsbyImageSharpFluid
           }
         }
