@@ -50,6 +50,13 @@ const IndexPage: React.FC = () => {
         />
 
         <Section
+          subTitle={i18next.t('index.professional-development.good-energy.title')}
+          content={[
+            i18next.t('index.professional-development.good-energy.content-one'),
+          ]}
+        />
+
+        <Section
           subTitle={i18next.t('index.professional-development.capita.title')}
           content={[
             i18next.t('index.professional-development.capita.content-one'),

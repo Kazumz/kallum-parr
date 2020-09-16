@@ -37,7 +37,7 @@ export default {
         "professional-development": {
             "title": "Professional Development",
             "capita": {
-                "title": "CAPITA (2015-2020)",
+                "title": "CAPITA (2015 - 2020)",
                 "content-one": "After leaving University, I realised the only challenge I really wanted to pursue was Development. Even though I lived in Swansea at the time, I applied country wide.",
                 "content-two": "I joined CAPITA in Chippenham as a Junior Software Developer, embarking on a five year journey with the company on the ControlWorks project. For two and a half years, I learnt about a number of technologies. Most notably:",
                 "asp": "ASP.NET Web API and MVC",
@@ -48,6 +48,10 @@ export default {
                 "react-redux": "React Redux & Redux Saga",
                 "typescript": "TypeScript",
                 "content-four": "To say this was a challenge is an understatement. While we started as a team of three, the project expanded to over ten Scrum teams spread across the UK and India. I had a number of great travel opportunities here that also involved travelling to India to teach and experience different cultures. Around this time I was promoted to Senior Software Developer and moved to Cabbot Circus in Bristol to expand and support the project further."
+            },
+            "good-energy": {
+                "title": "Good Energy (2020 - Present)",
+                "content-one": "After my time at CAPITA, I joined Good Energy in Chippenham to learn about the green energy industry and become a Lead Developer. I am thoroughly enjoying Good Energy and the role itself."
             }
         }
     },
