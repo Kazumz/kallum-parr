@@ -9,13 +9,12 @@ interface ISectionProps {
     className?: string;
 }
 
-const Section: React.FC<ISectionProps> = (props) => {
-    const {
-        title,
-        subTitle,
-        content,
-        className
-    } = props;
+const Section: React.FC<ISectionProps> = ({
+    title,
+    subTitle,
+    content = [],
+    className
+}) => {
 
     const paragraphs: ReadonlyArray<JSX.Element> = React.useMemo(
         () => content.map((s: string, index: number) => <p key={index}>{s}</p>),

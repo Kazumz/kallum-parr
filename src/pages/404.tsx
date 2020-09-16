@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Styles from "../styles/404.module.scss"
 import Section from "../components/section";
-import initialise from "../utilities/internationalisation";
+import initialise from "..//internationalisation/i18n";
 
 initialise();
 

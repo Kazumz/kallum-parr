@@ -6,7 +6,18 @@
   "author": "Kallum Parr <kallum.parr@kallumparr.co.uk>",
   "dependencies": {
     "classnames": "^2.2.6",
+    "i18next": "^19.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-i18next": "^11.3.4"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.10",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-helmet": "^5.0.9",
     "gatsby": "^2.20.23",
+    "gatsby-cli": "^2.11.9",
     "gatsby-image": "^2.3.3",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-manifest": "^2.3.4",
@@ -19,17 +30,6 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.2.3",
     "gatsby-transformer-sharp": "^2.4.5",
-    "i18next": "^19.4.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-i18next": "^11.3.4"
-  },
-  "devDependencies": {
-    "@types/classnames": "^2.2.10",
-    "@types/react-dom": "^16.9.6",
-    "@types/react-helmet": "^5.0.9",
-    "gatsby-cli": "^2.11.9",
     "eslint": "^6.8.0",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-react-hooks": "^2.0.1",

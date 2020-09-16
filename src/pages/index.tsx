@@ -8,7 +8,7 @@ import List from "../components/list"
 import ImageContainer from "../components/image-container"
 import OrangeBlob from "../images/orange-blob";
 import Section from "../components/section";
-import initialise from "../utilities/internationalisation";
+import initialise from "../internationalisation/i18n";
 
 initialise();
 
@@ -47,8 +47,41 @@ const IndexPage: React.FC = () => {
 
         <Section
           title={i18next.t('index.professional-development.title')}
+        />
+
+        <Section
+          subTitle={i18next.t('index.professional-development.capita.title')}
           content={[
-            i18next.t('index.professional-development.capita'),
+            i18next.t('index.professional-development.capita.content-one'),
+            i18next.t('index.professional-development.capita.content-two'),
+          ]}
+        />
+
+        <List
+          items={[
+            i18next.t('index.professional-development.capita.asp'),
+            i18next.t('index.professional-development.capita.wpf'),
+            i18next.t('index.professional-development.capita.sql')
+          ]}
+        />
+
+        <Section
+          content={[
+            i18next.t('index.professional-development.capita.content-three'),
+          ]}
+        />
+
+        <List
+          items={[
+            i18next.t('index.professional-development.capita.react'),
+            i18next.t('index.professional-development.capita.react-redux'),
+            i18next.t('index.professional-development.capita.typescript')
+          ]}
+        />
+
+        <Section
+          content={[
+            i18next.t('index.professional-development.capita.content-four'),
           ]}
         />
       </span>
