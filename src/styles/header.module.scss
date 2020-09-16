@@ -3,15 +3,12 @@
 @import 'responsive-mixins';
 
 .header {
-    height: $HeaderHeight;
-
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
     border-bottom: 1px solid black;
     background: $HeaderBackgroundBrush;
-    padding-left: $StandardLargeMargin;
-    padding-right: $StandardLargeMargin;
+    padding: $StandardLargeMargin;
 
     & > .header-title {
         grid-column: 1;
@@ -43,21 +40,19 @@
         justify-content: center;
 
         & > .header-quick-nav-button {
+            margin-top: $StandardSmallMargin;
+            margin-bottom: $StandardSmallMargin;
             margin-right: $StandardMargin;
         }
     }
 
-    & > .source-code {
-        grid-column: 3;
-    }
-
     @include tablet-down {     
-        & > .header-title {
-            display: none;
-        }
-
         & > .header-quick-nav {
             grid-column: 1;
+
+            margin-top: $StandardLargeMargin;
+            justify-content: initial;
+            flex-flow: wrap;
         }  
 
         & > .source-code {

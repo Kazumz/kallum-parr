@@ -19,9 +19,4 @@
         padding-left: $StandardLargeMargin;
         padding-right: $StandardLargeMargin;
     }
-
-    & > .layout-footer {
-        height: $FooterHeight;
-        background: $LayoutContentBackgroundBrush;
-    }
 }
