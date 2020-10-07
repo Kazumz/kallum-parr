@@ -6,7 +6,7 @@ import _en from "./language/en";
 
 export default async function initialise(): Promise<TFunction> {
     return await i18next.init({
-        interpolation: { escapeValue: false },
+        interpolation: { escapeValue: true },
         lng: 'en',
         resources: {
             en: {
