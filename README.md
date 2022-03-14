@@ -1,3 +1,10 @@
+# Obsolete and Deprecated
+A lot has gone on in the last 3 years in terms of my growth and development, this includes how I style websites and implement them.
+
+Therefore I have chosen to deprecate this website because I feel it no longer represents me as a developer appropriately.
+
+In place of this, I have created a new business card style website and will be hosting this at the same domain name. This repository is public on my GitHub also.
+
 # kallum-parr
 > This repository has been set up to demonstrate my capabilities as a Developer.
 
